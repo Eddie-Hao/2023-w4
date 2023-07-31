@@ -1,0 +1,67 @@
+.select-style {
+    width: calc(100% / 12 * 3);
+    padding: 5.5px 12px;
+    border: 1px solid $gray-400;
+    // 預設下拉icon取消
+    appearance: none;
+    // 匯入客製icon
+    background-image: url(https://lurl.cc/qsS3pb);
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+
+    @media (max-width: 767px) {
+        width: calc(100% - 72px);
+    }
+}
+
+.shop-card {
+    row-gap: 48px;
+
+    @media (max-width:992px) {
+        row-gap: 24px;
+    }
+
+    &-item {
+        height: 100%;
+    }
+
+    &-body {
+        height: 100%;
+    }
+
+    &-border {
+        border: 1px solid $shadow;
+    }
+
+    &-img-content {
+        height: 224px;
+        object-fit: cover;
+    }
+
+    &-title {
+        padding: 8px 24px;
+        border-bottom: 1px solid $shadow;
+    }
+
+    &-content {
+        padding: 16px 24px;
+    }
+
+    &-btn {
+        display: block;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+        text-align: center;
+        background-color: $black;
+    }
+}
+
+// 卡片hover，按鈕也會變色
+.card-item {
+
+    &:hover .shop-card-btn,
+    &:active .shop-card-btn {
+        background-color: $gray-800;
+    }
+}
+

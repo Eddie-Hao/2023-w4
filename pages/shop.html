@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>w4-眼鏡官網-台北中山旗艦店</title>
+    <%- include('./layout/font&icon'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container">
+            <div class="p-lg">
+                <h1 class="title h2 fs-1-sm fw-bold mb-8 mb-6-sm">門市據點</h1>
+                <div class="d-flex align-items-center mb-10 mb-6-sm">
+                    <label for="shoparea" class="fs-1 fs-base-sm mr-4 mr-2-sm">選擇地區</label>
+                    <select name="shoparea" id="shoparea" class="select-style fs-3 text-gray-700">
+                        <option value="台北中山旗艦店">台北中山旗艦店</option>
+                        <option value="台北綠園店">台北綠園店</option>
+                        <option value="台中清水旗艦店">台中清水旗艦店</option>
+                        <option value="高雄中正形象店">高雄中正形象店</option>
+                        <option value="高雄夢時代店">高雄夢時代店</option>
+                    </select>
+                </div>
+                <div class="row justify-between flex-column-md">
+                    <div class="col-5 col-12-md mb-6-md">
+                        <div class="d-flex flex-column justify-between flex-row-md flex-column-sm">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true"
+                                alt="台北中山旗艦店" class="shop-img-content shop-detail-img">
+                            <div class="shop-card-border shop-detail-content">
+                                <h1 class="shop-card-title fs-1">台北中山旗艦店</h1>
+                                <div class="shop-card-content">
+                                    <p class="fs-2 mb-2">
+                                        <span class="material-icons-outlined vertical-middle mr-2">call</span>
+                                        電話：(02)000-1234
+                                    </p>
+                                    <p class="fs-2 mb-2">
+                                        <span class="material-icons-outlined vertical-middle mr-2">schedule</span>
+                                        營業時間：10:00-21:00
+                                    </p>
+                                    <p class="fs-2">
+                                        <span class="material-icons-outlined vertical-middle mr-2">place</span>
+                                        地址：台北市中山區南京東路25巷2-1號
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 col-12-md">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7228.734546025447!2d121.54108456077117!3d25.05553803595145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdd8620bad1%3A0x2edda8e06ebf7fb0!2z5YWE5byf5aSn6aOv5bqX!5e0!3m2!1szh-TW!2stw!4v1690789760404!5m2!1szh-TW!2stw"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

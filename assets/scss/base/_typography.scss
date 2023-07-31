@@ -1,0 +1,86 @@
+.h1 {
+    font-size: 64px;
+}
+
+.h2 {
+    font-size: 48px;
+}
+
+.h3 {
+    font-size: 42px;
+}
+
+.h4 {
+    font-size: 36px;
+}
+
+.h5 {
+    font-size: 32px;
+}
+
+.fs-1 {
+    font-size: 24px;
+}
+
+.fs-2 {
+    font-size: 20px;
+}
+
+.fs-3 {
+    font-size: 18px;
+}
+
+.fs-base {
+    font-size: 16px;
+}
+
+.fs-4 {
+    font-size: 14px;
+}
+
+@media (max-width:992px) {
+    .fs-1-md {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:767px) {
+    .fs-1-sm {
+        font-size: 24px;
+    }
+    .fs-base-sm {
+        font-size: 16px;
+    }
+}
+
+//字重
+.fw-med {
+    font-weight: 500;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+.fw-black-italic {
+    font-weight: 900;
+    font-style: italic;
+}
+
+//文字顏色
+.text-white {
+    color: $white;
+}
+.text-primary {
+    color: $primary;
+}
+.text-gray-700{
+    color: $gray-700;
+}
+.text-gray-800{
+    color: $gray-800;
+}

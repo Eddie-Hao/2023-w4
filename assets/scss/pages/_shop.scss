@@ -1,0 +1,35 @@
+//店鋪資訊 圖片和內容 斷點寬度
+//沒用grid，不想要太多層
+.shop-detail{
+    &-img{
+        @media (max-width:992px) {
+            // 12px為guttter寬度
+            width: calc( 100% / 12 *5 - 12px);
+        } 
+
+        @media (max-width:767px) {
+            width: 100%;
+        } 
+    }
+
+    &-content{
+        @media (max-width:992px) {
+            // 12px為guttter寬度
+            width: calc( 100% / 12 *7 - 12px);
+        } 
+        @media (max-width:767px) {
+            width: 100%;
+        } 
+    }
+    
+}
+
+// google 地圖
+.map {
+    width: 100%;
+    height: 414px;
+
+    @media (max-width:767px) {
+        height: 208px;
+    }
+}

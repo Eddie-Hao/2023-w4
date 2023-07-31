@@ -1,0 +1,44 @@
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (max-width:767px) {
+    padding-bottom: 0;
+    margin-right: -12px;
+    margin-left: -12px;
+  }
+
+  &-logo {
+    width: 80px;
+    height: 48px;
+  }
+}
+
+.menu-link {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+@media (max-width:767px) {
+  .menu {
+    width: 100%;
+
+    &-item {
+      width: 50%;
+      border: 1px solid $white;
+      text-align: center;
+    }
+
+    &-link {
+      display: block;
+      padding-top: 12px;
+      padding-bottom: 12px;
+
+      &:hover,
+      &:active {
+        background-color: $white;
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.bg-primary{
+    background-color: $primary;
+}
+.bg-secondary{
+    background-color: $secondary;
+}
+.bg-tertiary{
+    background-color: $tertiary;
+}
+.bg-tertiary-light{
+    background-color: $tertiary-light;
+}
+// 文字對齊
+.text-center{
+    text-align: center;
+}
+
+// 垂直對齊
+.vertical-middle{
+    vertical-align: middle;
+}
+.title{
+    padding-left: 16px;
+    border-left: 8px solid $primary;
+}

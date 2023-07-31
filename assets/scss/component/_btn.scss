@@ -1,0 +1,8 @@
+.btn-link {
+    color: $white;
+  
+    &:hover,
+    &:active {
+      color: $gray-200;
+    }
+  }

@@ -1,0 +1,23 @@
+.card {
+    &-item{
+        cursor: pointer;
+    }
+
+    &-img {
+        overflow: hidden;
+        flex-shrink: 0;
+
+        &-content {
+            width: 100%;
+            transition: linear 0.3s;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    //卡片hover後,圖片放大
+    &-item:hover,&-item:active{
+        .card-img-content {
+            transform: scale(1.2);
+        }
+    }
+}

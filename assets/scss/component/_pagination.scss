@@ -1,0 +1,36 @@
+.pagination {
+    @media (max-width:767px) {
+        width: 100%;
+    }
+    &-item {
+        border-top: 1px solid $gray-600;
+        border-left: 1px solid $gray-600;
+        border-bottom: 1px solid $gray-600;
+        
+        &:first-child,&:last-child {
+            flex-shrink: 0;
+        }
+        &:last-child {
+            border-right: 1px solid $gray-600;
+        }
+    }
+
+    &-link {
+        display: block;
+        padding: 10.5px 16px;
+        background-color: $white;
+        color: $gray-600;
+
+        &:hover,&:active {
+            background-color: $gray-100;
+        }
+
+        &.active{
+            background-color: $black;
+            color: $white;
+        }
+        @media (max-width:767px) {
+            padding: 10.5px 13.5px;
+        }
+    }
+}
